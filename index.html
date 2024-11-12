@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="creaGrafico()">
+    <div id="functions">
+        <label>Inserisci un'equazione in funzione di x:</label>
+        <button id="add-equation-button">Aggiungi Equazione</button>
+        <div id="equation-inputs">
+            <!-- Qui saranno aggiunti dinamicamente i campi di input per le equazioni -->
+            <input type="text" class="equation-input" placeholder="Es. x^2 + 2*x + 1">
+        </div>
+    </div>
+
+    <div id="plotly-box"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+}
+
+#functions {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#functions label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#functions input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#functions input[type="text"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+#plotly-box {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Layout */
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#functions {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+#plotly-box {
+    flex-grow: 1;
+    background-color: #fff;
+}
